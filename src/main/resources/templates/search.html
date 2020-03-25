@@ -37,12 +37,7 @@
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
-    <table class="job-listing" th:each="list : ${job}">
-        <tr th:each ="job : ${list}">
-            <td th:text="${job.key}"></td>
-            <td th:text="${job.value}"></td>
-        </tr>
-    </table>
+    <div th:replace="fragments :: search"></div>
 
 </div>
 
