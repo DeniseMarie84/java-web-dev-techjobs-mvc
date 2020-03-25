@@ -29,8 +29,9 @@
 
 
 
-        <div th:fragment="search">
-            <table th:each="job : ${jobs}" class="job-listing">
+    <div th:fragment="search">
+        <table class="job-listing" th:each="job :${jobs}">
+
                 <tr>
                     <td th:text="'ID: ' + ${job.id}">ID</td>
                 </tr>
@@ -54,6 +55,7 @@
                 <tr>
                     <td th:text="'Skill: ' + ${job.coreCompetency}">Core Competency</td>
                 </tr>
+
             </table>
         </div>
 
